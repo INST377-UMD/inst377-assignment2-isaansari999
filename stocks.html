@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <Script src="script.js" defer></Script>
+</head>
+<body>
+    <header><h1>INST377 - STOCKS TIME</h1></header>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+    <h1>STOCKS 📈</h1>
+
+    <Section id="main">  
+        <div>
+            <label for="ticker">Enter Stock Ticket: </label>
+            <input type="text" id="ticker" placeholder="e.g. AAPL">
+            
+            <button class="button-33" onclick="lookupStock()">Lookup!</button>
+            <br>
+            <select id="days">
+                <option value="30">30 Days</option>
+                <option value="60">60 Days</option>
+                <option value="90">90 Days</option>
+            </select>
+        </div>
+        <canvas id="stockChart" ></canvas>
+    </Section>
+
+    <Section>
+        <table border="1" id="redditStocks">
+            
+            <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Comments</th>
+                <th>Sentiment</th>
+            </tr>
+            </thead>
+        <tbody></tbody>
+        </table>
+    </Section>
+
+    <section class="audio-box">
+        
+                
+                <ul>
+                    <li><strong>Voice Commands:</strong></li>
+                    <li> Lookup [your stock of choice!]</li>
+                    <li>Say "Hello" back to you! Say "Hello!"</li>
+                    <li>Navigate to any page by "Navigate to [page]"</li>
+                    <li>Change the background color! "Change the color to [whatever color you'd like!]"</li>
+                        
+                </ul>
+            
+    
+        <button class="button-29" onclick="startVoice()">Turn On Voice</button>
+        <button class="button-29" onclick="stopVoice()">Turn Off Voice</button>
+      </section>
+</body>
+</html>

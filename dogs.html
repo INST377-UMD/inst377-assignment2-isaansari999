@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js" defer></script>
+    <Script src="script.js" defer></Script>
+</head>
+<body>
+    <header><h1>INST377 - DOG TIME</h1></header>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+    <h1>DOGS!!!! 🐶</h1>
+
+
+    <section id="dogpics"> 
+        <div data-simple-slider id="dogCarousel"></div>
+    </section>
+    
+    <section id="breed-btns">
+        <h1>Breeds</h1>
+        <div id="breeds">
+
+        </div>
+
+    </section>
+    <div id="dogExpand">
+
+    </div>
+    <section class="audio-box">
+        <p><strong>Voice Commands:</strong>
+                <p>Load dog breed [your choice!]</p>
+                <ul>
+                    <li>Say "Hello" back to you! Say "Hello!"</li>
+                    <li>Navigate to any page by "Navigate to [page]"</li>
+                    <li>Change the background color! "Change the color to [whatever color you'd like!]"</li>
+                        
+                </ul>
+            
+    </p>
+        <button class="button-29" onclick="startVoice()">Turn On Voice</button>
+        <button class="button-29" onclick="stopVoice()">Turn Off Voice</button>
+      </section>
+</body>
+</html>
