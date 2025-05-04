@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <Script src="script.js" defer></Script>
+</head>
+<body>
+    <header><h1>INST377 - Assignment 2 Activities</h1></header>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stocks.html">Stocks</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+      </nav>
+    
+      <section id="maincontent">
+        <div>
+            <button class="button-29" id="dogButton" onclick="window.location.href='dogs.html'">Dogs</button>
+            <button class="button-29" id="stockButton" onclick="window.location.href='stocks.html'">Stocks</button>
+        </div>
+      </section>
+
+      <section class="quotebox">
+        <div>
+          <h1>Quote of the Day</h1>
+          <P id="quote"></P>
+        </div>
+      </section>
+
+      <section class="audio-box">
+        <p><strong>Voice Commands:</strong>
+            <ul>
+                <li>Say "Hello" back to you! Say "Hello!"</li>
+                <li>Navigate to any page by "Navigate to [page]"</li>
+                <li>Change the background color! "Change the color to [whatever color you'd like!]"</li>
+                    
+            </ul>
+    </p>
+        <button class="button-29" onclick="startVoice()">Turn On Voice</button>
+        <button class="button-29" onclick="stopVoice()">Turn Off Voice</button>
+      </section>
+</body>
+</html>
